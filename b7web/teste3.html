@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Diogo</title>
+    <style>
+        legend {
+            background-color: #ff0000;
+            padding: 5px;
+            color: #fff;
+        }
+
+        fieldset {
+            background-color: #EEE;
+            margin-bottom: 20px;
+            border: 2px solid #ff0000;
+        }
+    </style>
+
+</head>
+
+<body>
+    <form action="paginas/login.html" method="GET">
+        <fieldset>
+            <legend>Personal Data</legend>
+            <label>
+                Primeiro Nome:</br>
+                <input type="text" name="name">
+            </label></br>
+            <label>
+                Sobrenome:</br>
+                <input type="text" name="lastname" minlength="2" maxlength="5">
+            </label></br>
+            <label>
+                E-mail:</br>
+                <input type="email" name="E-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                    title="email adress">
+            </label></br>
+            <label>
+                Idade:</br>
+                <input type="number" name="age" min="18" max="102">
+            </label></br>
+        </fieldset>
+        <fieldset>
+
+            <legend>Professional Data</legend>
+            <label>
+                Nome da Empresa:</br>
+                <input type="text" name="companyname">
+            </label></br>
+            <label>
+                Cargo na Empresa:</br>
+                <input type="text" name="positioncompany">
+            </label></br>
+
+        </fieldset>
+        <button>Send</button>
+
+    </form>
+
+
+</body>
+
+</html>
